@@ -1,12 +1,14 @@
 # Ghost S3
 
-This is an S3 file module for Ghost blogs.
+This is an remote storage file module for Ghost blogs. Currently supports S3 and CloudFront.
+
+Originally forked from https://github.com/screenrev/ghost-s3. 
 
 
 
 ## Install
 
-	npm install --save ghost-s3
+	npm install --save git+https://github.com/infecto/ghost-remote-storage
 
 
 ## Configure
