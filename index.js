@@ -51,7 +51,6 @@ module.exports.save = function(image) {
         return unlink(image.path);
     })
     .then(function() {
-        return when.resolve(awsPath + targetFilename);
         if (typeof config.cloudFrontUrl != 'undefined') {
             return when.resolve('http://' + config.cloudFrontUrl + targetFilename);
         } else {
